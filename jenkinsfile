@@ -3,9 +3,8 @@ node {
 		git "https://github.com/Syedahmad75/AutomationProject.git"
 		}
 	stage ('Build'){
-    	dir("comtest") {
-	   sh "mvn clean install"
-       }
-       	
+    	steps { 
+               echo 'This is a minimal pipeline.' 
+            }
 		}
 }
